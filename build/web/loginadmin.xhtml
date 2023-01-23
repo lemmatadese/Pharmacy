@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>FRISTLOGIN</title>
+        <style>  
+            body{
+                
+                background-color: forestgreen;
+                background-repeat: no-repeat
+            }
+             .head{
+                background-color:#746355;
+               text-align:center;
+                position: fixed;
+                top: 0px;
+                height: 50px;
+                width: 1400px;
+                z-index: 2;
+                
+        }
+         .text{
+            margin-left:  35px;
+            
+        }
+        .password{
+            margin-left:  40px;
+            ;
+        }
+        .field{
+            background-image: url('IMAGE/IMAGE1/pv.jpg')
+               
+        }
+        .label{
+            text-indent: 6px
+        }
+        </style>
+    </h:head>
+    <h:body>
+         <h:form >
+       <h class="head" style="text-align: center" > WELCOME TO ADMIN LOGIN PAGE </h>
+            <fieldset style="width: 900px; margin:auto; padding: 20px; margin-top: 150px; border-bottom-color:red; height: 200px ">
+                   <div class="field">
+                       
+         
+
+                       <h:outputLabel for="username" value="User name:">   </h:outputLabel>
+
+                       <h:inputText id="username" value="#{login.username}" > </h:inputText >
+              <br></br>     
+              <br></br>
+              <h:outputLabel for="password" value="password">  </h:outputLabel>
+
+              <h:inputSecret  id="password"  value="#{login.password}" > </h:inputSecret>
+
+              <br></br>     
+              <br></br>
+              </div>
+
+
+       
+                <h:commandButton id="login" value="Login" action="adminpage" 
+                             style="padding:7px; background-color:  #fFfF8F;margin-left: 400px;  align-content: center"  />
+                 
+            <h:commandButton class="btn" value="Back" action="index" 
+                             style="padding:7px; background-color:  royalblue; align-content: center;margin-left: 5px; "  />
+            </fieldset>
+        </h:form>  
+               
+    </h:body>
+</html>
+

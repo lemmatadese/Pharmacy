@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <style>
+            
+              body{
+                
+                background-color: forestgreen;
+                
+            }
+             .head{
+                background-color:goldenrod;
+               text-align:center;
+                position: fixed;
+                height: 50px;
+                width: 1400px;
+                z-index: 2;
+                
+        }
+         .text{
+            margin-left:  35px;
+            
+        }
+        .password{
+            margin-left:  40px;
+            ;
+        }
+
+        </style>
+        <title>LoginCostumer</title>
+    </h:head>
+    <h:body>
+         <h:form >
+            <img class="images" src="IMAGE/IMAGE1/MY.jpg" alt="alt" style="float: right;width: 700px;top: 0px;height: 650px  "/>
+
+              <h class="head" style="text-align: center" > WELCOME TO COSTUMER LOGIN PAGE </h>
+             <br></br>
+             <br></br>
+              <br></br>
+               <br></br>     
+              <br></br>
+              <h:outputLabel for="text" value="Frist Name" >  </h:outputLabel >
+
+             
+              <br></br>     
+              <br></br>
+              <br></br>     
+              <br></br>
+
+       
+            <h:commandButton class="btn" value="Login" action="COSTUMERLOGIN" 
+                             style="padding:7px; background-color:  red; align-content: center;margin-left: 200px; "  />
+          
+            <h:commandButton class="btn" value="Back" action="index" 
+                             style="padding:7px; background-color:  royalblue; align-content: center;margin-left: 5px; "  />
+            <h:commandButton class="btn4"  type="reset" value="Reset" style="padding:7px; background-color:  white; align-content: center;margin-left: 5px; "  />
+ 
+
+        </h:form>  
+        
+               
+    </h:body>
+</html>
+

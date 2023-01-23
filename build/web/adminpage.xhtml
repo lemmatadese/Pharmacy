@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <style>
+            body{
+                background-color:forestgreen;
+            }
+        .head{
+                background-color:#3FFFfF;
+               text-align:center;
+                position: fixed;
+                height: 50px;
+                width: 1400px;
+                z-index: 2;
+                
+        }
+        .label{
+            top: 50px;
+        }
+        .text1{
+            margin: 10px;
+        }
+        .text2{
+            margin-left:  35px;
+             margin-top: 5px;
+        }
+        .btn1{
+         padding:5px;
+         margin: 5px;
+         background-color:#599f7F
+            
+        }
+        .btn2{
+         padding:5px;
+         margin: 5px;
+         background-color:#509903
+            
+        }
+        .btn3{
+         padding:5px;
+         margin: 5px;
+         background-color:#500000
+            
+        }
+         .btn4{
+         padding:5px;
+         margin: 5px;
+         background-color:#aaaaaa
+            
+        }
+                </style>
+        <title> ADMINPAGE </title>
+    </h:head>
+    <h:body>
+         <h:form >
+             <h class="head" style="text-align: center" > WELCOME TO ADMIN PAGE </h>
+             <br></br>
+             <br></br>
+              <br></br>
+               <br></br>     
+              <br></br>
+           <img class="images" src="IMAGE/IMAGE1/em.jpg" alt="alt" style="float: right;width: 1000px;top: 0px  "/>
+           <h:outputLabel for="fristname" value="fristname:"> </h:outputLabel >
+                <h:inputText id="fristname" value="#{newJSFManagedBean.fristname}" >  </h:inputText >
+                <br></br>
+                 <h:outputLabel for="lastname" value="lastame:">  </h:outputLabel >
+                <h:inputText id="lastname" value="#{newJSFManagedBean.lastname}"> </h:inputText>
+                 <br></br>   
+           <h:outputLabel for="status" value="Date" >  </h:outputLabel >
+
+              <h:inputText id="status" value="#{newJSFManagedBean.status}" > </h:inputText>
+              <br></br>
+ <h:outputLabel for="product" value="product:" >  </h:outputLabel >
+
+              <h:inputText id="product" value="#{newJSFManagedBean.product}" > </h:inputText>
+                            <br></br>
+
+            
+                                  <br></br> 
+                 <h:outputLabel for="medecine" value="Product Type:">  </h:outputLabel >
+                 <h:inputText id="medecine" value="#{newJSFManagedBean.medicine}"> </h:inputText>
+                 <br></br>                      <br></br> 
+            
+                <br></br>
+                <h:outputLabel for="brand" value="Price:"> </h:outputLabel >
+                <h:inputText id="brand" value="#{newJSFManagedBean.brand}"> </h:inputText > 
+                 <br></br>
+                 <h:outputLabel for="medecineid" value="medecineid">  </h:outputLabel >
+                <h:inputText id="medecineid" value="#{newJSFManagedBean.medecineid}">  </h:inputText >
+                 <br></br>
+                 
+                <h:outputLabel for="price" value="Brand Name:">  </h:outputLabel >
+                <h:inputText class="price" value="#{newJSFManagedBean.price}">  </h:inputText >
+                <br></br>
+                 
+               
+                 <h:commandButton class="btn1" value="ADD" action="#{newJSFManagedBean.profilerInsert}" />
+                  <h:commandButton class="btn1" value="DELETE" action="#{delet.del}" />
+                  <a href="DataTable.xhtml" style="margin: 45px; background-color: rosybrown; border: 2px blue; " >View</a>
+
+                  <a href="delete.java" style="margin: 45px; background-color: rosybrown; border: 2px blue; " >delete</a>
+                  <h:commandButton class="btn4"  type="reset" value="Reset" />
+
+            <h:commandButton class="btn" value="Back" action="LoginAdmin" 
+                             style="padding:7px; background-color:  royalblue; align-content: center;margin-left: 5px; "  />
+                               
+        </h:form>
+               
+                  
+    </h:body>
+</html>
+
