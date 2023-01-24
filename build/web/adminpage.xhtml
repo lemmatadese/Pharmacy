@@ -65,14 +65,17 @@
            <img class="images" src="IMAGE/IMAGE1/em.jpg" alt="alt" style="float: right;width: 1000px;top: 0px  "/>
            <h:outputLabel for="fristname" value="fristname:"> </h:outputLabel >
                 <h:inputText id="fristname" value="#{newJSFManagedBean.fristname}" >  </h:inputText >
-                <br></br>
+                <br></br>                 <br></br>
+
                  <h:outputLabel for="lastname" value="lastame:">  </h:outputLabel >
                 <h:inputText id="lastname" value="#{newJSFManagedBean.lastname}"> </h:inputText>
-                 <br></br>   
+                 <br></br>                   <br></br>
+
            <h:outputLabel for="status" value="Date" >  </h:outputLabel >
 
               <h:inputText id="status" value="#{newJSFManagedBean.status}" > </h:inputText>
-              <br></br>
+              <br></br>                <br></br>
+
  <h:outputLabel for="product" value="product:" >  </h:outputLabel >
 
               <h:inputText id="product" value="#{newJSFManagedBean.product}" > </h:inputText>
@@ -82,29 +85,31 @@
                                   <br></br> 
                  <h:outputLabel for="medecine" value="Product Type:">  </h:outputLabel >
                  <h:inputText id="medecine" value="#{newJSFManagedBean.medicine}"> </h:inputText>
-                 <br></br>                      <br></br> 
+                 <br></br>                   
             
                 <br></br>
                 <h:outputLabel for="brand" value="Price:"> </h:outputLabel >
                 <h:inputText id="brand" value="#{newJSFManagedBean.brand}"> </h:inputText > 
-                 <br></br>
+                 <br></br>                <br></br>
+
                  <h:outputLabel for="medecineid" value="medecineid">  </h:outputLabel >
                 <h:inputText id="medecineid" value="#{newJSFManagedBean.medecineid}">  </h:inputText >
                  <br></br>
-                 
+                                 <br></br>
+
                 <h:outputLabel for="price" value="Brand Name:">  </h:outputLabel >
                 <h:inputText class="price" value="#{newJSFManagedBean.price}">  </h:inputText >
                 <br></br>
-                 
+                                 <br></br>
+
                
                  <h:commandButton class="btn1" value="ADD" action="#{newJSFManagedBean.profilerInsert}" />
-                  <h:commandButton class="btn1" value="DELETE" action="#{delet.del}" />
-                  <a href="DataTable.xhtml" style="margin: 45px; background-color: rosybrown; border: 2px blue; " >View</a>
+                <h:commandButton class="iconn7" value="Delete" action="#{newJSFManagedBean.delete(newJSFManagedBean.medecineid)}"/>                
+                <h:commandButton class="iconn7" value="VIEW" action="DataTabel"/>                 
 
-                  <a href="delete.java" style="margin: 45px; background-color: rosybrown; border: 2px blue; " >delete</a>
                   <h:commandButton class="btn4"  type="reset" value="Reset" />
 
-            <h:commandButton class="btn" value="Back" action="LoginAdmin" 
+            <h:commandButton class="btn" value="Back" action="loginadmin" 
                              style="padding:7px; background-color:  royalblue; align-content: center;margin-left: 5px; "  />
                                
         </h:form>

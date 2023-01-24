@@ -32,7 +32,7 @@
         <div  >
 
             <h:dataTable  value="#{getlist.userList}"
-                          var="column" style=" border: 1px red;">   
+                          var="column" style=" border: 1px red; width:  100%">   
                 <h:column>
                     <f:facet name="header">
                         First Name
@@ -61,13 +61,13 @@
                 </h:column>
                 <h:column>
                     <f:facet name="header">
-                        Medicine
+                        MedicineID
                     </f:facet>
                     #{column.medecineid}
                 </h:column>
                  <h:column>
                     <f:facet name="header">
-                        Medicineid
+                        Medicine
                     </f:facet>
                     #{column.medicine}
                     
