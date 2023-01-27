@@ -5,10 +5,9 @@
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+
 import java.sql.SQLException;
-import java.util.Arrays;
-import javax.inject.Named;
+
 import javax.enterprise.context.Dependent;
 import javax.faces.bean.ManagedBean;
 
@@ -130,5 +129,5 @@ String medecineid;
         } catch(SQLException sqlException){
         }
         return "/adminpage.xhtml?faces-redirect=true";
+    } 
     }
-}

@@ -32,8 +32,12 @@
                height:auto;
                width:100px;
             }
-           
-         
+           buttons.checkout:hover
+          {
+         background-color:red;
+          }
+       
+
                 
            
                
@@ -57,11 +61,14 @@
            
                         
               <h:commandButton  value="ADMIN" action="loginadmin.xhtml" style="
-               padding: 7px; margin:7px; background-color:  #52ff7f
-                " />     
+               padding: 7px; margin:7px; background-color:  #fff644;border-radius: 19px 
+                ;color: red; " />     
             
-            <h:commandButton class="btn" value="COSTUMER" action="logincostumer" 
-                             style="padding:7px; background-color:  #52ff7f;top:798px "  />
+            <h:commandButton class="buttons" value="COSTUMER" action="logincostumer" 
+                             style="padding:7px; background-color:  #ddff77;color: red;border-radius: 19px;button.checkout:hover
+{
+ background-color:green;
+} "  />
                
                  
            </div>
