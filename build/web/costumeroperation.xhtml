@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <style>
+            body{
+                background-color:forestgreen;
+            }
+        .head{
+                background-color:#3FFFfF;
+               text-align:center;
+                position: fixed;
+                height: 50px;
+                width: 1400px;
+                z-index: 2;
+                
+        }
+        .label{
+            top: 50px;
+        }
+        .text1{
+            margin: 10px;
+        }
+        .text2{
+            margin-left:  35px;
+             margin-top: 5px;
+        }
+        .btn{
+         padding:5px;
+         margin: 5px;
+         background-color:#599f7F;
+         
+                   border-radius: 19px  
+
+  
+        }
+
+        .btn1{
+         padding:5px;
+         margin: 5px;
+         background-color:#599f7F;
+                     border-radius: 19px  
+  
+        }
+        .btn2{
+         padding:5px;
+         margin: 5px;
+         background-color:#509903;
+           border-radius: 19px  
+        }
+        .btn3{
+         padding:5px;
+         margin: 5px;
+         background-color:#500000;
+            border-radius: 19px 
+        }
+         .btn4{
+         padding:5px;
+         margin: 5px;
+         background-color:#aaaaaa;
+            border-radius: 19px ;
+        }
+                </style>
+        <title> Costumerpage </title>
+    </h:head>
+    <h:body>
+         <h:form >
+             <h class="head" style="text-align: center" > WELCOME TO OUR PHARMACY CENTER PAGE </h>
+             <br></br>
+             <br></br>
+              <br></br>
+               <br></br>     
+              <br></br>
+           <img class="images" src="IMAGE/IMAGE1/em.jpg" alt="alt" style="float: right;width: 1000px;top: 0px  "/>
+           <h:outputLabel for="fristname" value="Frist Name:"> </h:outputLabel >
+                <br></br>  
+                <h:inputText id="fristname" value="#{newJSFManagedBean1.fristname}" >  </h:inputText >
+                <br></br>                 <br></br>
+
+                 <h:outputLabel for="lastname" value="Last Name:">  </h:outputLabel >
+                      <br></br>  
+                <h:inputText id="lastname" style="margin:5px" value="#{newJSFManagedBean1.lastname}"> </h:inputText>
+                 <br></br>                   <br></br>
+
+           <h:outputLabel for="address" style="margin:25px" value="address" >  </h:outputLabel >
+     <br></br>  
+              <h:inputText id="address" value="#{newJSFManagedBean1.address}" > </h:inputText>
+              <br></br>                <br></br>
+
+              <h:outputLabel for="email" value="email" >  </h:outputLabel >
+     <br></br>  
+              <h:inputText id="email" style="margin:15px" value="#{newJSFManagedBean1.email}" > </h:inputText>
+                            <br></br>
+
+            
+               
+
+                 <h:outputLabel for="medecineid" value="medecineid">  </h:outputLabel >
+                      <br></br>  
+                <h:inputText id="medecineid" value="#{newJSFManagedBean1.medecineid}">  </h:inputText >
+                 <br></br>
+                 <br></br>
+
+             <h:commandButton class="btn" value="PAY" style="background-color:red;" action="#{newJSFManagedBean1.delete(newJSFManagedBean1.medecineid)}"/>                
+
+                <h:commandButton class="btn" value="VIEW" action="DataTabel" style="background-color:#fff644;"/>                 
+
+                  <h:commandButton class="btn4"  type="reset" value="Cancel" />
+
+            <h:commandButton class="btn" value="Back" action="costumerpage" 
+                             style="padding:7px; background-color:  royalblue; align-content: center;margin-left: 5px; "  />
+                      
+            
+            <h:commandButton class="btn" value="LOGOUT" action="index" 
+                             style="padding:7px; background-color:  buttonface; align-content: center;margin-left: 5px; "  />
+                               
+        </h:form>
+               
+                  
+    </h:body>
+</html>
+

@@ -6,10 +6,10 @@
     <h:head>
         <style>
             body{
-                background-color:forestgreen;
+                background-color:#ff9900;
             }
         .head{
-                background-color:#3FFFfF;
+            background-color:#00cccc;
                text-align:center;
                 position: fixed;
                 height: 50px;
@@ -62,6 +62,9 @@
          background-color:#aaaaaa;
             border-radius: 19px ;
         }
+        .btn:hover{
+            background-color: #006633;
+        }
                 </style>
         <title> ADMINPAGE </title>
     </h:head>
@@ -74,43 +77,56 @@
                <br></br>     
               <br></br>
            <img class="images" src="IMAGE/IMAGE1/em.jpg" alt="alt" style="float: right;width: 1000px;top: 0px  "/>
-           <h:outputLabel for="fristname" value="Frist Name:"> </h:outputLabel >
-                <h:inputText id="fristname" value="#{newJSFManagedBean.fristname}" >  </h:inputText >
-                <br></br>                 <br></br>
+           <h:outputLabel for="fristname" value="Frist Name:">   </h:outputLabel >
+                         <br></br>
 
-                 <h:outputLabel for="lastname" value="Last Name:">  </h:outputLabel >
+                <h:inputText id="fristname" value="#{newJSFManagedBean.fristname}" >  </h:inputText >
+                                <br></br>
+
+                <h:outputLabel for="lastname" value="Last Name:">  </h:outputLabel >
+                               <br></br>
                 <h:inputText id="lastname" style="margin:5px" value="#{newJSFManagedBean.lastname}"> </h:inputText>
-                 <br></br>                   <br></br>
+                              <br></br>
 
            <h:outputLabel for="status" style="margin:25px" value="Status" >  </h:outputLabel >
+                                            <br></br>
+
 
               <h:inputText id="status" value="#{newJSFManagedBean.status}" > </h:inputText>
-              <br></br>                <br></br>
+                            <br></br>
 
- <h:outputLabel for="product" value="product:" >  </h:outputLabel >
+                 <h:outputLabel for="product" value="product:" >  </h:outputLabel >
+              <br></br>
 
-              <h:inputText id="product" style="margin:15px" value="#{newJSFManagedBean.product}" > </h:inputText>
+              <h:inputText id="product"  value="#{newJSFManagedBean.product}" > </h:inputText>
                             <br></br>
 
             
-                                  <br></br> 
+                              
                  <h:outputLabel for="medecine" value="Medicine:">  </h:outputLabel >
+                               <br></br>
+
                  <h:inputText id="medecine" value="#{newJSFManagedBean.medicine}"> </h:inputText>
                  <br></br>                   
             
-                <br></br>
+             
                 <h:outputLabel for="brand" value="Brand Name"> </h:outputLabel >
-                <h:inputText id="brand" style="margin:5px" value="#{newJSFManagedBean.brand}"> </h:inputText > 
-                 <br></br>                <br></br>
+                              <br></br>
+
+                <h:inputText id="brand" value="#{newJSFManagedBean.brand}"> </h:inputText > 
+                <br></br>
 
                  <h:outputLabel for="medecineid" value="medecineid">  </h:outputLabel >
+                               <br></br>
+
                 <h:inputText id="medecineid" value="#{newJSFManagedBean.medecineid}">  </h:inputText >
-                 <br></br>
                                  <br></br>
 
                 <h:outputLabel for="price" value="Price">  </h:outputLabel >
-                <h:inputText class="price" style="margin:25px" value="#{newJSFManagedBean.price}">  </h:inputText >
-                <br></br>
+                                                 <br></br>
+
+                <h:inputText class="price" value="#{newJSFManagedBean.price}">  </h:inputText >
+            
                                  <br></br>
 
                
