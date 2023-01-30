@@ -23,21 +23,23 @@ public class getlist  {
             ResultSet rs = con.createStatement().executeQuery("select * from ADMINTABEL");
             while (rs.next()) {
                 NewJSFManagedBean admin = new NewJSFManagedBean();
-                admin.setFristname(rs.getString("FRISTNAME"));
-                admin.setLastname(rs.getString("LASTNAME"));
                 admin.setMedicine(rs.getString("MEDICINE"));
                 admin.setProduct(rs.getString("PRODUCT"));
                 admin.setPrice(rs.getString("PRICE"));
                 admin.setStatus(rs.getString("STATUS"));
                  admin.setBrand(rs.getString("BRAND"));
                  admin.setMedecineid(rs.getString("MEDICINEID"));
-                //course[1]=rs.getString("COURSE");
-                //usr.setCourse(course);
+                             admin.setAmount(rs.getString("AMOUNT"));
+
+
+                
                 list.add(admin);
             }
         } catch (ClassNotFoundException | SQLException e) {
         }
         return list;
     }
+    
+    
 
 }

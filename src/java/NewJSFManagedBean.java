@@ -19,9 +19,7 @@ import javax.faces.bean.ManagedBean;
 @Dependent
 @ManagedBean
 public class NewJSFManagedBean {
-String fristname;
 
-String lastname;
 String medicine;
 String product;
 String price;
@@ -29,22 +27,16 @@ String price;
 String status;
 String brand;
 String medecineid;
+String amount;
 
-    public String getFristname() {
-        return fristname;
+    public String getAmount() {
+        return amount;
     }
 
-    public void setFristname(String fristname) {
-        this.fristname = fristname;
+    public void setAmount(String amount) {
+        this.amount = amount;
     }
-
-    public String getLastname() {
-        return lastname;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
-    }
+    
 
     public String getMedicine() {
         return medicine;
@@ -102,16 +94,17 @@ String medecineid;
             
             DBConnection dbcon = new DBConnection();
             Connection con = dbcon.connMethod();
-            String sql = "Insert into ADMINTABEL(FRISTNAME,LASTNAME,MEDICINE,PRODUCT,PRICE,STATUS,BRAND,MEDICINEID) values(?,?,?,?,?,?,?,?)";
+            String sql = "Insert into ADMINTABEL(MEDICINE,PRODUCT,PRICE,STATUS,BRAND,MEDICINEID, AMOUNT) values(?,?,?,?,?,?,?)";
             PreparedStatement ps = con.prepareStatement(sql);
-            ps.setString(1, fristname);
-            ps.setString(2, lastname);
-            ps.setString(3, medicine);
-            ps.setString(4, product);
-            ps.setString(5, price);
-             ps.setString(6, status);
-            ps.setString(7, brand);
-            ps.setString(8, medecineid);
+            
+            ps.setString(1, medecineid);
+            ps.setString(2, medicine);
+            ps.setString(3, product);
+             ps.setString(4, price);
+            ps.setString(5, status);
+            ps.setString(6, brand);
+             ps.setString(7, amount);
+
             ps.executeUpdate();
             try{
            
@@ -130,4 +123,30 @@ String medecineid;
         }
         return "/adminpage.xhtml?faces-redirect=true";
     } 
+  public void update(String medecineid) throws ClassNotFoundException, SQLException {
+       
+        
+            
+            DBConnection dbcon = new DBConnection();
+            Connection con = dbcon.connMethod();
+         
+            String sql = " update ADMINTABEL set MEDICINE=?,PRODUCT=?,PRICE=?,PRICE=?,STATUS=?,BRAND=?,AMOUNT=? where MEDICINEID=?"; 
+            PreparedStatement ps = con.prepareStatement(sql);
+                         ps.setString(1, medecineid);
+
+             ps.setString(2, medicine);
+            ps.setString(3, product);
+             ps.setString(4, price);
+            ps.setString(5, status);
+            ps.setString(6, brand);
+             ps.setString(7, amount);
+                                      ps.setString(8, medecineid);
+
+
+            ps.executeUpdate();
+            try{
+           
+        } catch (Exception e) {
+        }
+    }
     }

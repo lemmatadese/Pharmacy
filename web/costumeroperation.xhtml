@@ -67,7 +67,7 @@
     </h:head>
     <h:body>
          <h:form >
-             <h class="head" style="text-align: center" > WELCOME TO OUR PHARMACY CENTER PAGE </h>
+             <h class="head" style="text-align: center" > WELCOME TO ADMIN PAGE </h>
              <br></br>
              <br></br>
               <br></br>
@@ -103,11 +103,13 @@
                  <br></br>
                  <br></br>
 
-             <h:commandButton class="btn" value="PAY" style="background-color:red;" action="#{newJSFManagedBean1.delete(newJSFManagedBean1.medecineid)}"/>                
+             <h:commandButton class="btn" value="P" style="background-color:red;" action="#{newJSFManagedBean1.delete(newJSFManagedBean1.medecineid)}"/>                
+                 <h:commandButton class="btn1" value="ADD" style="background-color:violet;" action="#{newJSFManagedBean1.profilerInsert}" />
 
                 <h:commandButton class="btn" value="VIEW" action="DataTabel" style="background-color:#fff644;"/>                 
+             <h:commandButton class="bt" value="buy" action="pay"/>
 
-                  <h:commandButton class="btn4"  type="reset" value="Cancel" />
+       <h:commandButton class="btn4"  type="reset" value="Cancel" />
 
             <h:commandButton class="btn" value="Back" action="costumerpage" 
                              style="padding:7px; background-color:  royalblue; align-content: center;margin-left: 5px; "  />

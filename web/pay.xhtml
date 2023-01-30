@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+         <h:outputLabel for="medicine" value="medicine:"> </h:outputLabel >
+                <br></br>  
+                <h:inputText id="medicine" value="#{newJSFManagedBean1.medicine}" >  </h:inputText >
+                <br></br>                 <br></br>
+
+                 <h:outputLabel for="amount" value="amount:">  </h:outputLabel >
+                      <br></br>  
+                <h:inputText id="amount" style="margin:5px" value="#{newJSFManagedBean1.amount}"> </h:inputText>
+                 <br></br>                   <br></br>
+                  <h:outputLabel for="product" value="product"> </h:outputLabel >
+                <br></br>  
+                <h:inputText id="product" value="#{newJSFManagedBean1.product}" >  </h:inputText >
+                <br></br>                 <br></br>
+
+                 <h:outputLabel for="price" value="price">  </h:outputLabel >
+                      <br></br>  
+                <h:inputText id="price" style="margin:5px" value="#{newJSFManagedBean1.price}"> </h:inputText>
+                <br></br>                   <br></br>
+                 <h:outputLabel for="status" value="status"> </h:outputLabel >
+                <br></br>  
+                <h:inputText id="status" value="#{newJSFManagedBean1.status}" >  </h:inputText >
+                <br></br>                 <br></br>
+
+                 <h:outputLabel for="brand" value="brand">  </h:outputLabel >
+                      <br></br>  
+                <h:inputText id="brand" style="margin:5px" value="#{newJSFManagedBean1.brand}"> </h:inputText>
+                 <br></br>                   <br></br>
+                 <h:outputLabel for="medecineid" value="medecineid">  </h:outputLabel >
+                      <br></br>  
+                <h:inputText id="medecineid" style="margin:5px" value="#{newJSFManagedBean1.medecineid}"> </h:inputText>
+                 <br></br>                   <br></br>
+                 
+      <h:commandButton class="btn" value="PAY" action="#{newJSFManagedBean1.buy(newJSFManagedBean1.medicine,newJSFManagedBean1.amount)}"/>
+                <h:commandButton class="btn" value="VIEW" action="DataTabel" style="background-color:#fff644;"/>                 
+</h:form>
+        
+    </h:body>
+</html>
+

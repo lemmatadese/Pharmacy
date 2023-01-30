@@ -77,62 +77,64 @@
                <br></br>     
               <br></br>
            <img class="images" src="IMAGE/IMAGE1/em.jpg" alt="alt" style="float: right;width: 1000px;top: 0px  "/>
-           <h:outputLabel for="fristname" value="Frist Name:">   </h:outputLabel >
-                         <br></br>
-
-                <h:inputText id="fristname" value="#{newJSFManagedBean.fristname}" >  </h:inputText >
-                                <br></br>
-
-                <h:outputLabel for="lastname" value="Last Name:">  </h:outputLabel >
-                               <br></br>
-                <h:inputText id="lastname" style="margin:5px" value="#{newJSFManagedBean.lastname}"> </h:inputText>
-                              <br></br>
-
-           <h:outputLabel for="status" style="margin:25px" value="Status" >  </h:outputLabel >
-                                            <br></br>
-
-
-              <h:inputText id="status" value="#{newJSFManagedBean.status}" > </h:inputText>
-                            <br></br>
-
-                 <h:outputLabel for="product" value="product:" >  </h:outputLabel >
-              <br></br>
-
-              <h:inputText id="product"  value="#{newJSFManagedBean.product}" > </h:inputText>
-                            <br></br>
-
-            
-                              
-                 <h:outputLabel for="medecine" value="Medicine:">  </h:outputLabel >
-                               <br></br>
-
-                 <h:inputText id="medecine" value="#{newJSFManagedBean.medicine}"> </h:inputText>
-                 <br></br>                   
-            
-             
-                <h:outputLabel for="brand" value="Brand Name"> </h:outputLabel >
-                              <br></br>
-
-                <h:inputText id="brand" value="#{newJSFManagedBean.brand}"> </h:inputText > 
-                <br></br>
+          
 
                  <h:outputLabel for="medecineid" value="medecineid">  </h:outputLabel >
                                <br></br>
 
                 <h:inputText id="medecineid" value="#{newJSFManagedBean.medecineid}">  </h:inputText >
                                  <br></br>
+              
+                 <h:outputLabel for="medecine" value="Medicine:">  </h:outputLabel >
+                               <br></br>
 
-                <h:outputLabel for="price" value="Price">  </h:outputLabel >
+                 <h:inputText id="medecine" value="#{newJSFManagedBean.medicine}"> </h:inputText>
+                               <br></br>
+
+                 <h:outputLabel for="product" value="product:" >  </h:outputLabel >
+              <br></br>
+
+              
+              <h:inputText id="product"  value="#{newJSFManagedBean.product}" > </h:inputText>
+                            <br></br>
+
+                             <h:outputLabel for="price" value="Price">  </h:outputLabel >
                                                  <br></br>
 
                 <h:inputText class="price" value="#{newJSFManagedBean.price}">  </h:inputText >
             
                                  <br></br>
+           <h:outputLabel for="status" style="margin:25px" value="Status" >  </h:outputLabel >
+                                            <br></br>
+
+                 <br></br>          
+              <h:inputText id="status" value="#{newJSFManagedBean.status}" > </h:inputText>
+                                               <br></br>
+
+                <h:outputLabel for="brand" value="Brand Name"> </h:outputLabel >
+                              <br></br>
+
+                <h:inputText id="brand" value="#{newJSFManagedBean.brand}"> </h:inputText > 
+                <br></br>
+            
+                 <h:outputLabel for="amount" value="amount" >  </h:outputLabel >
+              <br></br>
+
+              
+              <h:inputText id="amount"  value="#{newJSFManagedBean.amount}" > </h:inputText>
+                            <br></br>
+                         
+            
+             
+
+
+               
 
                
                  <h:commandButton class="btn1" value="ADD" style="background-color:violet;" action="#{newJSFManagedBean.profilerInsert}" />
                 <h:commandButton class="btn" value="Delete" style="background-color:red;" action="#{newJSFManagedBean.delete(newJSFManagedBean.medecineid)}"/>                
                 <h:commandButton class="btn" value="VIEW" action="DataTabel" style="background-color:#fff644;"/>                 
+                <h:commandButton class="btn" value="update" action="#{newJSFManagedBean.update(newJSFManagedBean.medecineid)}" style="background-color:#fff644;"/>                 
 
                   <h:commandButton class="btn4"  type="reset" value="Cancel" />
 

@@ -33,57 +33,53 @@
 
             <h:dataTable  value="#{getlist.userList}"
                           var="column" style=" border: 1px red; width:  100%">   
-                <h:column>
-                    <f:facet name="header">
-                        First Name
-                    </f:facet>
-                    #{column.fristname}
-                </h:column>
-
-                <h:column>
-                    <f:facet name="header" class="text-center alert-warning">
-                        Last Name
-                    </f:facet>
-                    #{column.lastname}
-                </h:column>
-
-                <h:column>
-                    <f:facet name="header">
-                        Status
-                    </f:facet>
-                    #{column.status}
-                </h:column>
-                <h:column>
-                    <f:facet name="header">
-                        Price
-                    </f:facet>
-                    #{column.price}
-                </h:column>
-                <h:column>
+                 <h:column>
                     <f:facet name="header">
                         MedicineID
                     </f:facet>
                     #{column.medecineid}
                 </h:column>
-                 <h:column>
+         <h:column>
                     <f:facet name="header">
                         Medicine
                     </f:facet>
                     #{column.medicine}
+                                    </h:column>
+
+                     <h:column>
+                    <f:facet name="header">
+                      Product
+                    </f:facet>
+                    #{column.product}
                     
                 </h:column>
-                <h:column>
+                 <h:column>
+                    <f:facet name="header">
+                        Price
+                    </f:facet>
+                    #{column.price}
+                </h:column>
+                                <h:column>
+
+                    <f:facet name="header">
+                        Status
+                    </f:facet>
+                    #{column.status}
+                </h:column>
+               
+                                       <h:column>
                     <f:facet name="header">
                         Brand
                     </f:facet>
                     #{column.brand}
                     
                 </h:column>
-                 <h:column>
+                
+                <h:column>
                     <f:facet name="header">
-                      Product
+                      amount
                     </f:facet>
-                    #{column.product}
+                    #{column.amount}
                     
                 </h:column>
             </h:dataTable>
