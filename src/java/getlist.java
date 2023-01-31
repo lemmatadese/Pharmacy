@@ -40,6 +40,27 @@ public class getlist  {
         return list;
     }
     
-    
+    public List<NewJSFManagedBean> geUserList() {
+        List<NewJSFManagedBean> list = new ArrayList<>();
+        try {
+        
+            DBConnection dbcon = new DBConnection();
+            Connection con = dbcon.connMethod();
+            ResultSet rs = con.createStatement().executeQuery("select * from COSTUMTABEL");
+            while (rs.next()) {
+                NewJSFManagedBean admin = new NewJSFManagedBean();
+                admin.setMedicine(rs.getString("FRISTNAME"));
+                admin.setProduct(rs.getString("LASTNAME"));
+                admin.setPrice(rs.getString("EMAIL"));
+                admin.setStatus(rs.getString("MEDICINEID"));
+                
+
+
+                
+                list.add(admin);
+            }
+        } catch (ClassNotFoundException | SQLException e) {
+        }
+        return list;}
 
 }

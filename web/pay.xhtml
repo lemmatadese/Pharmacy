@@ -7,39 +7,22 @@
     </h:head>
     <h:body>
         <h:form>
-         <h:outputLabel for="medicine" value="medicine:"> </h:outputLabel >
+         <h:outputLabel for="amount" value="amount"> </h:outputLabel >
                 <br></br>  
-                <h:inputText id="medicine" value="#{newJSFManagedBean1.medicine}" >  </h:inputText >
-                <br></br>                 <br></br>
-
-                 <h:outputLabel for="amount" value="amount:">  </h:outputLabel >
-                      <br></br>  
-                <h:inputText id="amount" style="margin:5px" value="#{newJSFManagedBean1.amount}"> </h:inputText>
-                 <br></br>                   <br></br>
-                  <h:outputLabel for="product" value="product"> </h:outputLabel >
-                <br></br>  
-                <h:inputText id="product" value="#{newJSFManagedBean1.product}" >  </h:inputText >
-                <br></br>                 <br></br>
-
-                 <h:outputLabel for="price" value="price">  </h:outputLabel >
-                      <br></br>  
-                <h:inputText id="price" style="margin:5px" value="#{newJSFManagedBean1.price}"> </h:inputText>
-                <br></br>                   <br></br>
-                 <h:outputLabel for="status" value="status"> </h:outputLabel >
-                <br></br>  
-                <h:inputText id="status" value="#{newJSFManagedBean1.status}" >  </h:inputText >
-                <br></br>                 <br></br>
-
-                 <h:outputLabel for="brand" value="brand">  </h:outputLabel >
-                      <br></br>  
-                <h:inputText id="brand" style="margin:5px" value="#{newJSFManagedBean1.brand}"> </h:inputText>
-                 <br></br>                   <br></br>
+                    <br></br>  
+                    
                  <h:outputLabel for="medecineid" value="medecineid">  </h:outputLabel >
                       <br></br>  
                 <h:inputText id="medecineid" style="margin:5px" value="#{newJSFManagedBean1.medecineid}"> </h:inputText>
                  <br></br>                   <br></br>
                  
-      <h:commandButton class="btn" value="PAY" action="#{newJSFManagedBean1.buy(newJSFManagedBean1.medicine,newJSFManagedBean1.amount)}"/>
+                <h:inputText id="amount" style="margin:5px" value="#{newJSFManagedBean1.amount}"> </h:inputText>
+                 <br></br>                   <br></br>
+  
+                 
+                
+               
+      <h:commandButton class="btn" value="PAY" action="#{newJSFManagedBean1.buy(newJSFManagedBean1.medecineid,newJSFManagedBean1.amount)}"/>
                 <h:commandButton class="btn" value="VIEW" action="DataTabel" style="background-color:#fff644;"/>                 
 </h:form>
         

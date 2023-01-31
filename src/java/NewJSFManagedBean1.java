@@ -161,15 +161,15 @@ String brand;
          
             DBConnection dbcon = new DBConnection();
             Connection con = dbcon.connMethod();
-            String sql="select * from ADMINTABEL where medicine=?";
+            String sql="select * from ADMINTABEL where medecineid=?";
                PreparedStatement ps1 = con.prepareStatement(sql);
-               ps1.setString(1, medicine);
+               ps1.setString(1, medecineid);
                            ResultSet rs=ps1.executeQuery();
                            if(rs.next()){
-                           String s=rs.getString(2);
-                           Integer num=Integer.valueOf(s);
+                           String s=rs.getString(1);
+                           Integer num=Integer.parseInt(s);
                           System.out.println("the problem is ..........");
-                           Integer value=Integer.valueOf(amount1);
+                           Integer value=Integer.parseInt(amount1);
                            if(num<value){
                                System.out.println("not enougn amount");
                            } else{
@@ -178,15 +178,15 @@ String brand;
                           amount+=value;
                           
                             
-                 sql="update ADMINTABEL set MEDICINEID=?,AMOUNT=?,PRODUCT=?,PRICE=?,STATUS=?,BRAND=? where MEDICINE=?";  
+                 sql="update ADMINTABEL set AMOUNT=? where MEDICINEID=? ";  
                  PreparedStatement ps=con.prepareStatement(sql);
-             ps.setString(1,medecineid );
-             ps.setString(2, amount);
-            ps.setString(3, medicine);
-             ps.setString(4, product);
-            ps.setString(5, price);
-             ps.setString(6, status);
-            ps.setString(7, brand);
+                      ps.setString(1,medecineid );
+
+                       ps.setString(2, amount);
+           
+             ps.setString(3,medecineid );
+
+
             ps.executeUpdate();}
 }
     }}

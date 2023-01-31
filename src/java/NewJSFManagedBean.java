@@ -130,18 +130,15 @@ String amount;
             DBConnection dbcon = new DBConnection();
             Connection con = dbcon.connMethod();
          
-            String sql = " update ADMINTABEL set MEDICINE=?,PRODUCT=?,PRICE=?,PRICE=?,STATUS=?,BRAND=?,AMOUNT=? where MEDICINEID=?"; 
+            String sql = " update ADMINTABEL set MEDICINE=?,PRODUCT=?,PRICE=?,STATUS=?,BRAND=?,AMOUNT=? where MEDICINEID=?"; 
             PreparedStatement ps = con.prepareStatement(sql);
-                         ps.setString(1, medecineid);
-
-             ps.setString(2, medicine);
-            ps.setString(3, product);
-             ps.setString(4, price);
-            ps.setString(5, status);
-            ps.setString(6, brand);
-             ps.setString(7, amount);
-                                      ps.setString(8, medecineid);
-
+            ps.setString(1, medicine);
+            ps.setString(2, product);
+             ps.setString(3, price);
+            ps.setString(4, status);
+            ps.setString(5, brand);
+             ps.setString(6, amount);
+            ps.setString(7,medecineid);
 
             ps.executeUpdate();
             try{
